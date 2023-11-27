@@ -1,0 +1,30 @@
+<!-- templates/yourappname/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'yourappname/css/styles.css' %}">
+    <title>Your App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Category</h1>
+        <form id="categoryForm">
+            {% csrf_token %}
+            <label for="categoryName">Category Name:</label>
+            <input type="text" id="categoryName" name="categoryName" required>
+            <label for="parentCategory">Parent Category:</label>
+            <select id="parentCategory" name="parentCategory">
+                <option value="">None</option>
+                {% for category in categories %}
+                    <option value="{{ category.id }}">{{ category.name }}</option>
+                {% endfor %}
+            </select>
+            <button type="button" onclick="addCategory()">Add Category</button>
+        </form>
+    </div>
+    <script src="{% static 'yourappname/js/main.js' %}"></script>
+</body>
+</html>
