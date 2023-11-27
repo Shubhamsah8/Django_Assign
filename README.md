@@ -22,8 +22,4 @@ The project follows a structured layout:
 - Enables multiple products to be associated with multiple categories.
 - Provides API endpoints for adding categories, adding products to categories, getting categories with child categories, getting products by category, and updating product details.
 
-## Getting Started
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/yourusername/Django_Assignment.git
