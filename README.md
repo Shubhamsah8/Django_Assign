@@ -9,8 +9,8 @@ This repository contains a Django project created as part of an assignment. The 
 The project follows a structured layout:
 
 - **Django_Assignment/:** The main Django project folder.
-- **yourprojectname/:** The Django app folder.
-- **yourappname/:** Contains models, views, serializers, and templates.
+- **Django_Assignment/:** The Django app folder.
+- **Django_App/:** Contains models, views, serializers, and templates.
 - **db.sqlite3:** The SQLite database file.
 - **manage.py:** Django management script.
 - **staticfiles/:** Directory for collected static files during development.
